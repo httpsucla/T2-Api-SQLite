@@ -22,7 +22,7 @@ export default function CadastrarUsuario({ navigation }) {
        setLogin('');
        setSenha('');
        Alert.alert('Sucesso.', 'Usuário cadastrado com sucesso');
-       navigation.navigation('Usuario', data);
+       navigation.navigate('Usuario', data);
     });
   };
 

@@ -12,13 +12,14 @@ export default function CadastrarTempo({ navigation }) {
 
     async function search() {
         if (lat == '' || lon == '') {
-            Alert.alert('Atenção', 'Preencha todos os campos')
-            console.log(data)
+            Alert.alert('Atenção', 'Preencha todos os campos');
         }
         else if (isNaN(lat) || isNaN(lon)) {
-            Alert.alert('Atenção', 'Apenas valores numéricos são permitidos')
+            Alert.alert('Atenção', 'Apenas valores numéricos são permitidos');
+        }
+        else if ((lat < -90 || lat > 90) || (lon < -180 || lon > 180)) {
+            Alert.alert('Atenção', 'Valores informados inválidos');
         } else {
-            console.log(data)
             try {
                 const response = await axios.get(`?lat=${parseFloat(lat)}&lon=${parseFloat(lon)}&units=metric`, {
                     headers: {
@@ -28,7 +29,6 @@ export default function CadastrarTempo({ navigation }) {
                     }
                 });
                 setData(response.data);
-                console.log(data)
                 return response.data
             } catch (error) {
                 Alert.alert('Erro', error)

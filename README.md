@@ -8,7 +8,7 @@ Foram implementadas as tecnologias SQLite para a persistência dos dados, Biomet
 A api utilizada no projeto foi a **Open Weather**, disponível em: [Open Weather](https://openweathermap.org/)
 
 ***Dica para encontrar a latitude e longitude da localização de interesse:*** [Find latitude and longitude](https://www.findlatitudeandlongitude.com/).
-### Mais informações consultar a documentação do projeto
+### Mais informações consultar a [documentação](https://github.com/httpsucla/T2-Api-SQLite/blob/main/Documentacao_DS151.pdf) do projeto
 
 ### Primeiro acesso:
 **Login** `admin@email.com`

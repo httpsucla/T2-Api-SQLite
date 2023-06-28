@@ -20,7 +20,7 @@ export default function Login({ navigation }) {
       }
     });
 
-    if (user.login == 'admin@email.com' && user.senha == 'senha123' && user.tipo == 'ADMIN') {
+    if (user.login == 'admin@email.com' && user.senha == '1234' && user.tipo == 'ADMIN') {
       const auth = await LocalAuthentication.authenticateAsync({
         promptMessage: 'É necessário usar o Touch ID para acessar a área de Admin',
         fallbackLabel: 'É necessário usar o Touch ID para acessar a área de Admin',
@@ -36,7 +36,7 @@ export default function Login({ navigation }) {
   handleLogin = () => {
     User.getUserLogin(login, senha, (user) => {
       setUser(user);
-      if (user.login == 'admin@email.com' && user.senha == 'senha123' && user.tipo == 'ADMIN') {
+      if (user.login == 'admin@email.com' && user.senha == '1234' && user.tipo == 'ADMIN') {
         Alert.alert('Erro.', 'Usuário ou senha incorretos!');
       }
       else if (user === 0) {

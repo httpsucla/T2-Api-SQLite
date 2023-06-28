@@ -20,7 +20,7 @@ export default class User {
               // Caso nao exista, adiciona o Admin
               tx.executeSql(
                 'INSERT INTO tb_users (nome, login, senha, tipo) VALUES (?, ?, ?, ?)',
-                ['Admin', 'admin@email.com', 'senha123', 'ADMIN'],
+                ['Admin', 'admin@email.com', '1234', 'ADMIN'],
                 (_, result) => {
                   console.log('Admin adicionado com sucesso!');
                 },

@@ -13,6 +13,6 @@ A api utilizada no projeto foi a **Open Weather**, disponível em: [Open Weather
 ### Primeiro acesso:
 **Login** `admin@email.com`
 
-**Senha** `1234`
+**Senha** `senha123`
 
 **Opção:** `Acessar como administrador` 
